@@ -1,54 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Haushaltsgeräte-Empfehlungen</title>
-<meta name="description" content="Meine Empfehlungen für moderne Haushaltsgeräte und Gadgets.">
-<style>
-:root{--bg:#f5f6f8;--card:#fff;--text:#111318;--muted:#686f79;--line:#e4e6ea}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,sans-serif}
-.wrap{max-width:760px;margin:auto;padding:28px 16px 55px}
-.hero{text-align:center;padding:20px 4px 26px}.logo{width:76px;height:76px;border-radius:22px;background:#111;color:#fff;display:grid;place-items:center;margin:auto;font-weight:900;font-size:24px}
-h1{font-size:30px;margin:15px 0 7px}.hero p{color:var(--muted);margin:0;line-height:1.45}.badge{display:inline-block;margin-top:14px;padding:8px 12px;border:1px solid var(--line);border-radius:99px;background:#fff;font-size:12px;color:#555}
-h2{font-size:19px;margin:22px 3px 12px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;margin:14px 0;padding:15px;box-shadow:0 7px 24px #0000000b}
-.product-img{width:100%;max-height:390px;object-fit:contain;border-radius:14px;background:#f0f1f3;display:block;margin-bottom:15px}
-.tag{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#7a818b}.card h3{margin:7px 0 6px;font-size:20px}.card p{margin:0 0 15px;color:var(--muted);line-height:1.5;font-size:14px}
-.btn{display:block;background:#111;color:#fff;text-align:center;text-decoration:none;padding:14px;border-radius:12px;font-weight:800}
-.footer{text-align:center;color:#7b828b;font-size:11px;line-height:1.6;margin-top:28px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haushaltsgeräte-Empfehlungen</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+    .logo {
+      display: inline-flex;
+      width: 58px;
+      height: 58px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: white;
+      color: #111;
+      font-weight: 800;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: 30px; }
+    header p { margin: 0; color: #ccc; }
+    main {
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 18px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+    }
+    .content { padding: 22px; }
+    h2 { margin: 0 0 10px; font-size: 22px; }
+    .content p {
+      color: #555;
+      line-height: 1.5;
+      min-height: 72px;
+    }
+    .button {
+      display: block;
+      text-align: center;
+      background: #ff9900;
+      color: #111;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 14px 18px;
+      border-radius: 10px;
+      margin-top: 18px;
+    }
+    .button:hover { opacity: .9; }
+    .notice {
+      margin-top: 30px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 12px;
+      color: #666;
+      font-size: 13px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-<div class="wrap">
-<header class="hero">
-<div class="logo">HG</div>
-<h1>Haushaltsgeräte-Empfehlungen</h1>
-<p>Meine Empfehlungen für moderne Haushaltsgeräte &amp; Gadgets.</p>
-<div class="badge">🛒 Aktuelle Produktempfehlungen</div>
+
+<header>
+  <div class="logo">HG</div>
+  <h1>Haushaltsgeräte-Empfehlungen</h1>
+  <p>Meine Empfehlungen für moderne Haushaltsgeräte &amp; Gadgets.</p>
 </header>
 
-<h2>⭐ Meine aktuellen Empfehlungen</h2>
+<main>
+  <div class="grid">
 
-<article class="card">
-<img class="product-img" src="ecovacs-t90-pro-omni.jpg" alt="ECOVACS T90 PRO OMNI">
-<div class="tag">Saugroboter</div>
-<h3>ECOVACS T90 PRO OMNI</h3>
-<p>Leistungsstarker Saug- und Wischroboter mit OZMO ROLLER 3.0, 30.000 Pa Saugleistung und intelligenter Hinderniserkennung.</p>
-<a class="btn" href="https://link.amazon/B0erdKFpU" rel="nofollow sponsored">Bei Amazon ansehen →</a>
-</article>
+    <article class="card">
+      <img src="ecovacs-t50.jpg" alt="ECOVACS T50">
+      <div class="content">
+        <h2>ECOVACS T50</h2>
+        <p>
+          Ein moderner Saug- und Wischroboter für die tägliche Reinigung.
+          Ideal für alle, die ihre Böden möglichst automatisch sauber halten möchten.
+        </p>
+        <a class="button" href="https://link.amazon/B0erdKFpU" target="_blank" rel="nofollow sponsored noopener">
+          Bei Amazon ansehen
+        </a>
+      </div>
+    </article>
 
-<article class="card">
-<img class="product-img" src="ninja-dual-zone.jpg" alt="Ninja Dual Zone 6-in-1 Heißluftfritteuse">
-<div class="tag">Küche</div>
-<h3>Ninja Dual Zone 6-in-1</h3>
-<p>Zwei unabhängige Kochzonen, sechs Kochfunktionen und Platz für bis zu 8 Portionen – ideal für schnelle und vielseitige Mahlzeiten.</p>
-<a class="btn" href="https://link.amazon/B06l63t8Y" rel="nofollow sponsored">Bei Amazon ansehen →</a>
-</article>
+    <article class="card">
+      <img src="ninja-dual-zone.jpg" alt="Ninja Dual Zone 6-in-1 Heißluftfritteuse">
+      <div class="content">
+        <h2>Ninja Dual Zone 6-in-1</h2>
+        <p>
+          Heißluftfritteuse mit zwei unabhängigen Garzonen und sechs Funktionen:
+          Max Crisp, Air Fry, Roast, Bake, Reheat und Dehydrate.
+        </p>
+        <a class="button" href="https://link.amazon/B06l63t8Y" target="_blank" rel="nofollow sponsored noopener">
+          Bei Amazon ansehen
+        </a>
+      </div>
+    </article>
 
-<footer class="footer">
-Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.<br>
-Preise, Angebote und Verfügbarkeit können sich ändern.
+  </div>
+
+  <div class="notice">
+    Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
+  </div>
+</main>
+
+<footer>
+  © 2026 Haushaltsgeräte-Empfehlungen
 </footer>
-</div>
+
 </body>
 </html>
